@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Campaign</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="admin-header">
+  <h1>Edit Campaign</h1>
+  <div>
+    <a href="index.html">Home</a>
+  </div>
+</header>
+
+  <main>
+    <div class="form-container">
+      <h2>Edit Campaign</h2>
+      <form id="edit-campaign-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <textarea id="description" placeholder="Description" required></textarea>
+        <input type="number" id="goal" placeholder="Goal" required>
+        <input type="date" id="deadline" required>
+        <input type="file" id="image" accept="image/*">
+        <button type="submit">Update Campaign</button>
+      </form>
+      <div id="message"></div>
+    </div>
+  </main>
+
+  <script src="scripts/edit-campaign.js"></script>
+</body>
+</html>

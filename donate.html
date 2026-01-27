@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate - Crowdfunding</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <h1>Donate</h1>
+  <div>
+    <a href="index.html">Home</a>
+  </div>
+</header>
+
+<main>
+  <div class="form-container">
+    <h2>Donate to: <span id="campaign-title"></span></h2>
+    <p>Goal: <span id="campaign-goal"></span></p>
+
+    <form id="donate-form">
+      <input type="number" id="amount" placeholder="Amount to donate" required>
+      <button type="submit">Donate</button>
+    </form>
+
+    <div id="donate-message"></div>
+  </div>
+</main>
+
+<script src="scripts/donate.js"></script>
+</body>
+</html>

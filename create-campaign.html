@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Create Campaign</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header class="admin-header">
+        <h1>Create Campaign</h1>
+        <div>
+            <a href="index.html">Home</a>
+        </div>
+    </header>
+
+    <section class="create">
+        <div class="form-container">
+            <h2>Create Campaign</h2>
+
+            <form id="create-campaign-form">
+                <input type="text" id="title" placeholder="Campaign Title" required>
+
+                <textarea id="description" placeholder="Campaign Description" required></textarea>
+
+                <input type="number" id="goal" placeholder="Goal Amount" required>
+
+                <input type="date" id="deadline" required>
+
+                <input type="file" id="image" accept="image/*">
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="education">Education</option>
+                    <option value="health">Health</option>
+                    <option value="music">Music</option>
+                    <option value="animals">Animals</option>
+                </select><br><br>
+
+                <button type="submit">Create Campaign</button>
+            </form>
+
+            <div id="campaign-message"></div>
+        </div>
+    </section>
+
+    <script src="scripts/create-campaign.js"></script>
+
+</body>
+
+</html>

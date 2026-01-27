@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crowdfunding Platform</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Crowdfunding Logo">
+            </a>
+        </div>
+        <nav id="nav-links">
+            <a href="login.html" id="login-link">Login</a>
+            <a href="register.html" id="register-link">Register</a>
+            <a href="admin.html" id="admin-link" style="display:none;">
+                Admin Dashboard
+            </a>
+            <a href="#" id="logout-link" style="display:none;">
+                Logout
+            </a>
+        </nav>
+    </header>
+    <div class="filter-bar">
+    <select id="categoryFilter">
+    <option id="all" value="">All Categories</option>
+    <option value="education">Education</option>
+    <option value="health">Health</option>
+    <option value="music">Music</option>
+    <option value="animals">Animals</option>
+    </select>
+
+    <button id="filterBtn">Filter</button>
+</div>
+
+    <section class="search">
+        <input type="text" id="search-input" placeholder="Search campaigns...">
+        <button id="search-button">Search</button>
+    </section>
+    <main>
+        <h2>Approved Campaigns</h2>
+        <div id="campaigns-container">
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
